@@ -3,28 +3,28 @@ A basic Form of the TID-Language, a language for E2E tests.
 
 This Project shows how the TID Language could be used.
 
-PRECONDIDTION:openFinancialLogin
-ACTION:WAITFOR
-Applications.Financial.Login.Username|true
-Applications.Financial.Login.Password|true
-Applications.Financial.Login.ButtonLogin|true
-ACTION:CHECKENABLED
-Applications.Financial.Login.Username|true
-Applications.Financial.Login.Password|true
-Applications.Financial.Login.ButtonLogin|false
-ACTION:SETVALUE
-Applications.Financial.Login.Username|user
-Applications.Financial.Login.Password|password
-ACTION:CHECKENABLED
-Applications.Financial.Login.ButtonLogin|true
-ACTION:CLICK
-Applications.Financial.Login.ButtonLogin|click
-ACTION:WAITFOR
-Applications.Financial.Login.Username|false
-Applications.Financial.Login.Password|false
-Applications.Financial.Login.ButtonLogin|false
-ACTION:CHECKVALUE
-Applications.Financial.Username|user
+    PRECONDIDTION:openFinancialLogin
+    ACTION:WAITFOR
+    Applications.Financial.Login.Username|true
+    Applications.Financial.Login.Password|true
+    Applications.Financial.Login.ButtonLogin|true
+    ACTION:CHECKENABLED
+    Applications.Financial.Login.Username|true
+    Applications.Financial.Login.Password|true
+    Applications.Financial.Login.ButtonLogin|false
+    ACTION:SETVALUE
+    Applications.Financial.Login.Username|user
+    Applications.Financial.Login.Password|password
+    ACTION:CHECKENABLED
+    Applications.Financial.Login.ButtonLogin|true
+    ACTION:CLICK
+    Applications.Financial.Login.ButtonLogin|click
+    ACTION:WAITFOR
+    Applications.Financial.Login.Username|false
+    Applications.Financial.Login.Password|false
+    Applications.Financial.Login.ButtonLogin|false
+    ACTION:CHECKVALUE
+    Applications.Financial.Username|user
 
 ROUTINE:ApplicationFinancialLogout
 
