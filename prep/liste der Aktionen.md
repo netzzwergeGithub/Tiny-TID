@@ -6,3 +6,4 @@
 * set text
 * get text
 * check value/content
+* wait for (automatic?)
